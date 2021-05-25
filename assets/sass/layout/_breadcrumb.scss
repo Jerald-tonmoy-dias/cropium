@@ -1,0 +1,54 @@
+/* Breadcrumb Section */
+.breadcrumb-area {
+    padding-top: 90px;
+    padding-bottom: 56px;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    nav {
+        z-index: 1;
+        flex-direction: column;
+    }
+
+    h2 {
+        color: $white-color;
+        text-align: center;
+        font-family: $heading-font;
+    }
+
+    .breadcrumb {
+        background: none;
+        display: flex;
+        justify-content: center;
+
+        .breadcrumb-item {
+            color: $white-color;
+            text-transform: capitalize;
+
+            &.active {
+                font-size: 18px;
+                font-weight: 700;
+
+                &::before {
+                    color: $white-color;
+                }
+            }
+
+            a {
+                color: $white-color;
+                text-transform: capitalize;
+                transition: .3s;
+                font-size: 18px;
+                font-weight: 700;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+
+    }
+}

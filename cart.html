@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Page Title -->
+    <title>Cart Page - eCommerce HTML5 Template</title>
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awsome-all.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Preloader Starts -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header>
+        <div class="header-area">
+            <div class="header-top">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-4 col-sm-5 col-12 justify-content-center">
+                            <div class="header-link-wrapper">
+                                <ul>
+                                    <li><span><i class="fas fa-dollar-sign"></i></span></li>
+                                    <li>
+                                        <select name="#">
+                                            <option value="#">usd</option>
+                                            <option value="#">euro</option>
+                                        </select>
+                                    </li>
+                                    <li><span><i class="fas fa-globe"></i></span></li>
+                                    <li>
+                                        <select name="#">
+                                            <option value="#">english</option>
+                                            <option value="#">spanish</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-2 col-12">
+                            <div class="header-logo">
+                                <div class="logo">
+                                    <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-4 col-sm-5 col-12 d-flex justify-md-content-end justify-content-center">
+                            <div class="header-link-wrapper-2">
+                                <a href="#" class="open_"><span class="hdr-search"><i
+                                            class="fas fa-search"></i></span></a>
+                                <a href="#"><span class="hdr-user"><i class="far fa-user"></i></span></a>
+                                <a href="#">
+                                    <span class="hdr-basket"><i class="fas fa-shopping-basket"></i></span>
+                                </a>
+                                <span class="amount">$ 0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- separator -->
+            <div class="separator">
+                <hr>
+            </div>
+            <!-- header-btm-->
+            <div class="header-btm">
+                <div class="container-fluid">
+                    <div class="container-wrapper">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-10 col-xl-2 col-md-6 col-sm-6">
+                                <!-- cat list -->
+                                <div class="cat_list">
+                                    <span class="_open-cat cat-icon"><i class="fas fa-align-left"></i></span>
+                                    <span class="cat-title">all categories</span>
+                                    <div id="cat-wrapper" class="cat-wrapper">
+                                        <!-- start -->
+                                        <ul>
+                                            <li class="has-sublist"> <img src="assets/images/ci1.png" alt=""
+                                                    class="icon-vec"><a href="#">home</a>
+
+                                                <div class="mega-wrapper">
+                                                    <ul class="mega-menu">
+                                                        <img class="vec1" src="assets/images/mega-vec.png" alt="">
+                                                        <li class="mega-item">
+                                                            <ul>
+                                                                <li class="mega-img"><img src="assets/images/title1.png"
+                                                                        alt="img"></li>
+                                                                <li class="title">Headphone</li>
+                                                                <li><a href="#">wirelsess Headphones</a></li>
+                                                                <li><a href="#">smart Headphones</a></li>
+                                                                <li><a href="#">black Headphones</a></li>
+                                                                <li><a href="#">smart watch</a></li>
+                                                                <li><a href="#">laptop Headphones</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="mega-item">
+                                                            <ul>
+                                                                <li class="mega-img"><img src="assets/images/title2.png"
+                                                                        alt="img"></li>
+                                                                <li class="title">smart watch</li>
+                                                                <li><a href="#">classic watch</a></li>
+                                                                <li><a href="#">digital watch</a></li>
+                                                                <li><a href="#">women watch</a></li>
+                                                                <li><a href="#">smart watch</a></li>
+                                                                <li><a href="#">wall clock</a></li>
+
+                                                            </ul>
+                                                        </li>
+                                                        <li class="mega-item">
+                                                            <ul>
+                                                                <li class="mega-img"><img src="assets/images/title3.png"
+                                                                        alt="img"></li>
+                                                                <li class="title">accessories</li>
+                                                                <li><a href="#">laptop</a></li>
+                                                                <li><a href="#">smart phone</a></li>
+                                                                <li><a href="#">smart tv</a></li>
+                                                                <li><a href="#">smart watch</a></li>
+                                                                <li><a href="#">gaming laptop</a></li>
+
+                                                            </ul>
+                                                        </li>
+                                                        <div class="brands">
+                                                            <img class="menu-brand" src="assets/images/brand-1.png"
+                                                                alt="">
+                                                            <img class="menu-brand" src="assets/images/brand-2.png"
+                                                                alt="">
+                                                            <img class="menu-brand" src="assets/images/brand-3.png"
+                                                                alt="">
+                                                            <img class="menu-brand" src="assets/images/brand-4.png"
+                                                                alt="">
+                                                        </div>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                                            <li class="has-sublist"> <img src="assets/images/ci2.png" alt=""
+                                                    class="icon-vec">
+                                                <a href="#"> headphones</a>
+                                                <ul class="sublist">
+                                                    <li class="title">Headphone</li>
+                                                    <li><a href="#">wirelsess Headphones</a></li>
+                                                    <li class="has-sublist"><a href="#">smart Headphones</a>
+                                                        <ul class="sublist">
+                                                            <li class="title">Headphone</li>
+                                                            <li><a href="#">wirelsess Headphones</a></li>
+                                                            <li><a href="#">smart Headphones</a></li>
+                                                            <li><a href="#">black Headphones</a></li>
+                                                            <li><a href="#">smart watch</a></li>
+                                                            <li><a href="#">laptop Headphones</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">black Headphones</a></li>
+                                                    <li><a href="#">smart watch</a></li>
+                                                    <li><a href="#">laptop Headphones</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sublist"> <img src="assets/images/ci3.png" alt=""
+                                                    class="icon-vec"><a href="#">men
+                                                </a>
+                                                <ul class="sublist">
+                                                    <li class="title">men</li>
+                                                    <li><a href="#">wirelsess Headphones</a></li>
+                                                    <li><a href="#">smart Headphones</a></li>
+                                                    <li><a href="#">black Headphones</a></li>
+                                                    <li><a href="#">smart watch</a></li>
+                                                    <li><a href="#">laptop Headphones</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sublist"> <img src="assets/images/ci4.png" alt=""
+                                                    class="icon-vec"><a href="#">women</a>
+                                                <ul class="sublist">
+                                                    <li class="title">women</li>
+                                                    <li><a href="#">wirelsess Headphones</a></li>
+                                                    <li><a href="#">smart Headphones</a></li>
+                                                    <li><a href="#">black Headphones</a></li>
+                                                    <li><a href="#">smart watch</a></li>
+                                                    <li><a href="#">laptop Headphones</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sublist"> <img src="assets/images/ci5.png" alt=""
+                                                    class="icon-vec"> <a href="#">laptop &
+                                                    computer</a>
+                                                <ul class="sublist">
+                                                    <li class="title">laptop & computer</li>
+                                                    <li><a href="#">wirelsess Headphones</a></li>
+                                                    <li><a href="#">smart Headphones</a></li>
+                                                    <li><a href="#">black Headphones</a></li>
+                                                    <li><a href="#">smart watch</a></li>
+                                                    <li><a href="#">laptop Headphones</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sublist"> <img src="assets/images/ci6.png" alt=""
+                                                    class="icon-vec"> <a href="#">watch</a>
+                                                <ul class="sublist">
+                                                    <li class="title">watch</li>
+                                                    <li><a href="#">wirelsess Headphones</a></li>
+                                                    <li><a href="#">smart Headphones</a></li>
+                                                    <li><a href="#">black Headphones</a></li>
+                                                    <li><a href="#">smart watch</a></li>
+                                                    <li><a href="#">laptop Headphones</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sublist"> <img src="assets/images/ci7.png" alt=""
+                                                    class="icon-vec"> <a href="#">fashion</a>
+                                                <ul class="sublist">
+                                                    <li class="title">fashion</li>
+                                                    <li><a href="#">wirelsess Headphones</a></li>
+                                                    <li><a href="#">smart Headphones</a></li>
+                                                    <li><a href="#">black Headphones</a></li>
+                                                    <li><a href="#">smart watch</a></li>
+                                                    <li><a href="#">laptop Headphones</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sublist"> <img src="assets/images/ci8.png" alt=""
+                                                    class="icon-vec"> <a href="#">electronic</a>
+                                                <ul class="sublist">
+                                                    <li class="title">electronic</li>
+                                                    <li><a href="#">wirelsess Headphones</a></li>
+                                                    <li><a href="#">smart Headphones</a></li>
+                                                    <li><a href="#">black Headphones</a></li>
+                                                    <li><a href="#">smart watch</a></li>
+                                                    <li><a href="#">laptop Headphones</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sublist"> <img src="assets/images/ci9.png" alt=""
+                                                    class="icon-vec"> <a href="#">books</a>
+                                                <ul class="sublist">
+                                                    <li class="title">books</li>
+                                                    <li><a href="#">wirelsess Headphones</a></li>
+                                                    <li><a href="#">smart Headphones</a></li>
+                                                    <li><a href="#">black Headphones</a></li>
+                                                    <li><a href="#">smart watch</a></li>
+                                                    <li><a href="#">laptop Headphones</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sublist"> <img src="assets/images/ci10.png" alt=""
+                                                    class="icon-vec"> <a href="#">baby kids</a>
+                                                <ul class="sublist">
+                                                    <li class="title">baby kids</li>
+                                                    <li><a href="#">wirelsess Headphones</a></li>
+                                                    <li><a href="#">smart Headphones</a></li>
+                                                    <li><a href="#">black Headphones</a></li>
+                                                    <li><a href="#">smart watch</a></li>
+                                                    <li><a href="#">laptop Headphones</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sublist"> <img src="assets/images/ci11.png" alt=""
+                                                    class="icon-vec"> <a href="#">more</a>
+                                                <ul class="sublist">
+                                                    <li><a href="#">wirelsess Headphones</a></li>
+                                                    <li><a href="#">smart Headphones</a></li>
+                                                    <li><a href="#">black Headphones</a></li>
+                                                    <li><a href="#">smart watch</a></li>
+                                                    <li><a href="#">laptop Headphones</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <!-- end -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-7 d-none d-lg-block">
+                                <!-- <span class="mobile-menu-trigger"><i class="fas fa-align-center"></i></span> -->
+                                <nav id="main-menu">
+                                    <ul class="main-menu" id="menuWrapper">
+                                        <li class="has-megamenu"><a href="#">home</a>
+                                        </li>
+                                        <li><a href="#">best seller</a></li>
+                                        <li class="has-submenu"><a href="#">shop</a>
+                                            <ul class="submenu">
+                                                <li><a href="">shop 1</a></li>
+                                                <li><a href="">shop 2</a></li>
+                                                <li><a href="">shop 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">special offer</a></li>
+                                        <li><a href="#">blog</a></li>
+                                        <li><a href="#">contact</a></li>
+                                        <li class="has-submenu"><a href="#">pages</a>
+                                            <ul class="submenu">
+                                                <li><a href="">cart</a></li>
+                                                <li><a href="">checkout</a></li>
+                                                <li><a href="">left side list</a></li>
+                                                <li><a href="">review</a></li>
+                                                <li><a href="">single shop</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- mobile menu active  -->
+                            <div class="mobile-menu"></div>
+                            <div
+                                class="col-lg-3 col-xl-3 col-12 col-sm-5 d-flex justify-content-sm-end justify-content-center">
+                                <!-- hotline -->
+                                <div class="hotline">
+                                    <span class="line-icon"><i class="fas fa-headphones"></i></span>
+                                    <h5><span>Hotline</span> : 123- 45687903</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- full width search form -->
+    <div class="full-width-search">
+        <span class="close_"><i class="fas fa-times"></i></span>
+        <form action="#">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search..">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- breadcrumb area -->
+    <div class="breadcrumb-area" style="background-image: url('assets/images/breadcrumb.png');">
+        <div class="container">
+            <div class="row justify-content-center">
+                <nav aria-label="breadcrumb">
+                    <h2 class="page-title">cart page</h2>
+                    <ol class="breadcrumb text-center">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">error page</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- cart area -->
+    <div class="main-cart-area pt-100 pb-45">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-xl-8">
+                    <div style="overflow-x: scroll;">
+                        <!-- product-details-wrapper -->
+                        <table class="product-details-wrapper">
+                            <thead class="product-heading">
+                                <tr class="table-one-tr" style="line-height: 60px;">
+                                    <th class="th" style="width:10%"></th>
+                                    <th class="th" style="width:40%">Product name</th>
+                                    <th class="th" style="width:15%">Price</th>
+                                    <th class="th" style="width:8%">Quantity</th>
+                                    <th class="th text-center" style="width:22%">Subtotal</th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <!-- row 1 -->
+                                <tr class="product-row" style="line-height: 60px;">
+                                    <td class="text-center" style="width:10%">
+                                        <a class="remove" href="#"><i class="fas fa-times-circle"></i></a>
+                                    </td>
+                                    <td style="width:50%;" class="td_border">
+                                        <!--data-th="Product"-->
+                                        <div class="product-info">
+                                            <!--class="row"-->
+                                            <div class=" d-none d-md-block col-md-4">
+                                                <div class="table-img"><img src="assets/images/cart-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-8">
+                                                <h5>The Best is Yet to
+                                                    Come' Frame</h5>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center td_border" style="width:10%">50.00$</td>
+                                    <!--data-th="Price"-->
+                                    <td style="width:8%" class="td_border">
+                                        <!-- data-th="Quantity"-->
+                                        <input type="number" class="input-box text-center" value="1">
+                                    </td>
+                                    <td class="text-center" style="width:22%">50.00$</td>
+                                    <!--data-th="Subtotal"  -->
+                                </tr>
+
+                                <!-- row 2 -->
+                                <tr class="product-row">
+                                    <td class="text-center" style="width:10%">
+                                        <a class="remove" href="#"><i class="fas fa-times-circle"></i></a>
+                                    </td>
+                                    <td style="width:50%" class="td_border">
+                                        <!--data-th="Product"-->
+                                        <div class="product-info">
+                                            <!--class="row"-->
+                                            <div class=" d-none d-md-block col-md-4">
+                                                <div class="table-img"><img src="assets/images/cart-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-8">
+                                                <h5>The Clock is Yet to
+                                                    Come' Frame</h5>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center td_border" style="width:10%">50.00$</td>
+                                    <!--data-th="Price"-->
+                                    <td style="width:8%" class="td_border">
+                                        <!-- data-th="Quantity"-->
+                                        <input type="number" class="input-box text-center" value="1">
+                                    </td>
+                                    <td class="text-center" style="width:22%">50.00$</td>
+                                    <!--data-th="Subtotal"  -->
+                                </tr>
+
+                                <!-- row 3 -->
+                                <tr class="product-row">
+                                    <td class="text-center" style="width:10%">
+                                        <a class="remove" href="#"><i class="fas fa-times-circle"></i></a>
+                                    </td>
+                                    <td style="width:50%" class="td_border">
+                                        <!--data-th="Product"-->
+                                        <div class="product-info">
+                                            <!--class="row"-->
+                                            <div class=" d-none d-md-block col-md-4">
+                                                <div class="table-img"><img src="assets/images/cart-3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-8">
+                                                <h5>The Clock is Yet to
+                                                    Come' Frame</h5>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center td_border" style="width:10%">50.00$</td>
+                                    <!--data-th="Price"-->
+                                    <td style="width:8%" class="td_border">
+                                        <!-- data-th="Quantity"-->
+                                        <input type="number" class="input-box text-center" value="1">
+                                    </td>
+                                    <td class="text-center" style="width:22%">50.00$</td>
+                                    <!--data-th="Subtotal"  -->
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- discount code -->
+                    <div id="accordion" class="discount-code mt-30">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        discount code
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body discount-box">
+                                    <span>If you have a coupon code, please apply it below.</span>
+                                    <div class="row">
+                                        <div class="col-lg-6 d-flex flex-wrap ">
+                                            <input type="text" class="coupon" placeholder="Coupon Code">
+                                            <button class="coupon_btn btn2">apply coupon</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product control btn -->
+                    <div class="control_btns mt-30">
+                        <button>continue shopping</button>
+                        <button>update cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-xl-4">
+                    <!-- shipping and tax-->
+                    <div id="accordion1" class="shipping-tax-area">
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                        aria-controls="collapseTwo">
+                                        Estimate Shipping And TAX
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                                data-parent="#accordion1">
+                                <div class="card-body shipping-box">
+                                    <div class="shipping-info">
+                                        <div class="single-ship">
+                                            <input type="radio" id="flat" class="radio_input">
+                                            <label for="flat">flat rate :$5.00</label>
+                                        </div>
+
+                                        <div class="single-ship">
+                                            <input type="radio" id="local" class="radio_input">
+                                            <label for="local">local pickup</label>
+                                        </div>
+
+                                        <div class="single-ship">
+                                            <input type="radio" id="free" class="radio_input">
+                                            <label for="free">free shipping</label>
+                                        </div>
+
+                                    </div>
+                                    <!-- ship title -->
+
+                                    <span class="ship-title">change address</span>
+
+                                    <!-- input wrapper -->
+                                    <div class="input-wrapper">
+                                        <!-- country -->
+                                        <select class="input-style">
+                                            <option>united states(US)</option>
+                                            <option>Canada(ca)</option>
+                                            <option>malasia (my)</option>
+                                        </select>
+                                        <!-- city -->
+                                        <select class="input-style">
+                                            <option>united states(US)</option>
+                                            <option>Canada(ca)</option>
+                                            <option>malasia (my)</option>
+                                        </select>
+                                        <!-- town -->
+                                        <input type="text" placeholder="Town" class="input-style">
+                                        <input type="text" placeholder="Town" class="input-style">
+
+                                        <!-- update button -->
+                                        <button class="btn2">update</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- shipping and tax-->
+                    <div id="accordion3" class="shipping-tax-area mt-30">
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                                        aria-controls="collapseThree">
+                                        proceed to checkout
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
+                                data-parent="#accordion3">
+                                <div class="card-body checkout-box">
+
+                                    <ul class="d-flex justify-content-between">
+                                        <li class="sub">SUBTOTAL</li>
+                                        <li>$40</li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="d-flex justify-content-between">
+                                        <li>Grand Total</li>
+                                        <li>$20</li>
+                                    </ul>
+                                    <button class="btn2 mt-20" type="submit">Proceed to checkout</button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- subscribe area -->
+    <div class="subscribe-area pt-55">
+        <div class="container-fluid">
+            <div class="subs-wrapper">
+                <div class="subs-left">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="subs-content">
+                                <h3>New Shoes Collection</h3>
+                                <h5>Special 70% Offer on Disscount on Sale</h5>
+                                <a href="#">shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subs-image">
+                        <img src="assets/images/banner4.png" alt="">
+                    </div>
+                </div>
+
+                <div class="subs-right">
+                    <img src="assets/images/mega-vec3.png" alt="" class="vec-img">
+                    <div class="newsletter">
+                        <h3>Subscribe to our
+                            Newsletter</h3>
+                        <form action="#">
+                            <input class="input-box" type="text" placeholder="email address">
+                            <button type="submit" class="btn1">sign in</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer-area -->
+    <footer class="mt-80">
+        <div class="footer-area">
+            <div class="container-fluid">
+                <div class="footer-top pb-80">
+                    <div class="row">
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="foo-widget">
+                                <div class="logo">
+                                    <a href="index.html"> <img src="assets/images/logo.png" alt=""></a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    cididunt
+                                    ut labore dolore.</p>
+                                <div class="payment">
+                                    <div>
+                                        <h4>Payment</h4>
+                                    </div>
+                                    <div>
+                                        <img src="assets/images/payment.png" alt="" class="pimg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-xl-9">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="foo-widget">
+                                        <h4>Our Service</h4>
+                                        <ul>
+                                            <li><a href="#">delivery</a></li>
+                                            <li><a href="#">legal notice</a></li>
+                                            <li><a href="#">terms and conditions of use</a></li>
+                                            <li><a href="#">about us</a></li>
+                                            <li><a href="#">secure payments</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="foo-widget">
+                                        <h4>more links</h4>
+                                        <ul>
+                                            <li><a href="#">single blog news</a></li>
+                                            <li><a href="#">terms of Service</a></li>
+                                            <li><a href="#">legal info</a></li>
+                                            <li><a href="#">privacy policy</a></li>
+                                            <li><a href="#">return</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="foo-widget">
+                                        <h4>accounts</h4>
+                                        <ul>
+                                            <li><a href="#">personal info</a></li>
+                                            <li><a href="#">orders</a></li>
+                                            <li><a href="#">legal info</a></li>
+                                            <li><a href="#">credit slips</a></li>
+                                            <li><a href="#">my wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="foo-widget">
+                                        <h4>office in new york</h4>
+                                        <ul>
+                                            <li><i class="fas fa-map-marker"></i> 2000-1 Colonial Road,
+                                                Brooklyn, Ny 1000
+                                            </li>
+                                            <li><i class="fas fa-phone"></i> +22 024568972</li>
+                                        </ul>
+                                        <ul class="social-links mt-10">
+                                            <li><a href="#" class="fb"><i class="fab fa-facebook-square"></i></a></li>
+
+                                            <li><a href="#" class="tw"><i class="fab fa-twitter-square"></i></a></li>
+
+                                            <li><a href="#" class="linkdin"><i class="fab fa-linkedin"></i></a></li>
+
+                                            <li><a href="#" class="insta"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container-fluid">
+                    <div class="copyright-area">
+                        <div class="copyrght-txt">
+                            <span> &copy;2020, Cropium. All Rights Reserved.</span>
+                        </div>
+                        <div class="footer-link">
+                            <ul>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scroll to up -->
+    <div class="scrollup"><i class="fas fa-arrow-up"></i></div>
+
+
+
+    <!-- Javascript Files -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/counterup.min.js"></script>
+    <script src="assets/js/vendor/counterup.min.js"></script>
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/vendor/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="assets/js/vendor/waypoints.min.js"></script>
+    <script src="assets/js/vendor/easing.min.js"></script>
+    <script src="assets/js/vendor/wow.min.js"></script>
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

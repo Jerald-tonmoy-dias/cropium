@@ -1,0 +1,96 @@
+/* Footer Section */
+.footer-area {
+    .footer-top {
+        .foo-widget {
+            margin-bottom: 30px;
+
+            .logo {
+                width: 200px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            .payment {
+                display: flex;
+                align-items: center;
+
+                .pimg {
+                    width: initial;
+                    margin-left: 10px;
+                    margin-top: -18px;
+                }
+            }
+
+            h4 {
+                margin-bottom: 20px;
+            }
+
+            ul {
+                li {
+                    line-height: 1.7;
+
+                    a {
+                        color: $heading-color;
+                        text-transform: capitalize;
+                        font-size: 16px;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+
+                &.social-links {
+                    display: flex;
+
+                    li {
+                        margin-right: 10px;
+
+                        &:last-child {
+                            margin-right: initial;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        background: $teal-bg;
+        padding: 10px 0;
+
+        .copyright-area {
+            display: flex;
+            justify-content: space-between;
+
+            .copyright-txt {
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                }
+            }
+
+            .footer-link {
+                margin-right: 55px;
+
+                ul {
+                    display: flex;
+
+                    li {
+                        margin-right: 10px;
+
+                        a {
+                            color: $heading-color;
+                            font-weight: 500;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,261 @@
+/* Cart Page*/
+.main-cart-area {
+    .product-details-wrapper {
+        .product-heading {
+            background: $deep-gray;
+            text-align: center;
+
+            .th {
+                text-transform: capitalize;
+                padding: 0 20px;
+            }
+        }
+
+        .space {
+            display: block;
+            background: $gray-bg;
+            padding: 10px;
+        }
+
+        tr.product-row {
+            background: $gray-bg;
+            border-bottom: 2px solid $white-color;
+
+            .td_border {
+                border-right: 1px solid $border-color;
+            }
+
+            .input-box {
+                width: 80px;
+                margin: 30px;
+                border: 1px solid $border-color;
+            }
+
+            .remove {
+                color: $heading-color;
+                text-align: center;
+                padding: 20px;
+
+                @include small-device {
+                    display: block;
+                }
+
+            }
+
+            .product-info {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px;
+
+                @include small-device {
+                    display: block;
+                    width: 250px;
+                }
+
+                .table-img {
+                    img {
+                        width: 90px;
+                    }
+                }
+            }
+        }
+    }
+
+    // discount-code
+    .discount-code {
+        .card-header {
+            padding: 0;
+
+            button {
+                border: none;
+                width: 100%;
+                color: $heading-color;
+                text-align: left;
+                padding: 20px 30px;
+                text-transform: capitalize;
+                font-family: $body-font;
+                font-weight: 700;
+                background: $deep-gray;
+                position: relative;
+
+                &::after {
+                    content: '\f107';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 20px;
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .discount-box {
+            padding: 40px;
+
+            span {
+                font-weight: 400;
+                font-size: 14px;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+                display: block;
+            }
+
+            .coupon {
+                padding: 5px 10px;
+                border: 1px solid $border-color;
+
+                @include portrait-phone {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .coupon_btn {
+                margin-left: 30px;
+
+                @include portrait-phone {
+                    margin-left: 0px;
+                    margin-top: 30px;
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // control_btns
+    .control_btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            border: 1px solid $border-color;
+            padding: 10px 20px;
+            text-transform: capitalize;
+            border-top-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background: $white-color;
+            font-weight: 500;
+            font-family: $body-font;
+            opacity: .5;
+            transition: $transition;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    // shipping tax area
+    .shipping-tax-area {
+        @include mobile-device {
+            margin-top: 30px;
+        }
+
+        @include desktop {
+            margin-top: 30px;
+        }
+
+        .card-header {
+            padding: 0;
+
+            button {
+                border: none;
+                width: 100%;
+                color: $heading-color;
+                text-align: left;
+                padding: 20px 30px;
+                text-transform: capitalize;
+                font-family: $body-font;
+                font-weight: 700;
+                background: $deep-gray;
+                position: relative;
+
+                &::after {
+                    content: '\f107';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 20px;
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                }
+            }
+        }
+
+        // shipping box
+        .shipping-box {
+            .shipping-info {
+                display: flex;
+                flex-wrap: wrap;
+
+                .single-ship {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 10px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    label {
+                        font-family: $body-font;
+                        font-weight: 500;
+                        font-size: 16px;
+                        text-transform: capitalize;
+                        margin-right: 10px;
+                        display: block;
+                        cursor: pointer;
+
+                        &::after {
+                            content: '';
+                        }
+
+                        &:last-child {
+                            margin-right: initial;
+                        }
+                    }
+
+                    .radio_input {
+                        display: block;
+                        margin-top: -8px;
+                        width: 8px;
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            // shipping title
+            .ship-title {
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: capitalize;
+            }
+
+            // input wrapper
+
+            .input-wrapper {
+                .input-style {
+                    border: 1px solid $border-color;
+                    padding: 8px 20px;
+                    border-radius: 5px;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    text-transform: capitalize;
+                }
+
+                .nice-select {
+                    line-height: initial;
+
+                    .list {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
