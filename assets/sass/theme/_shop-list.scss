@@ -11,7 +11,7 @@
   .best-left-sidebar {
     width: 19%;
     @include screen-1200 {
-      width: 29%;
+      width: 19%;
     }
     @include desktop {
       width: 29%;
@@ -24,6 +24,7 @@
       .slick-next,
       .slick-prev {
         position: absolute;
+        padding: 0;
         width: 30px;
         height: 30px;
         line-height: 30px;
@@ -34,6 +35,13 @@
         z-index: 1;
         background: transparent;
         border: 1px solid transparent;
+        @include screen-1200 {
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          font-size: 10px;
+          top: 49px;
+        }
 
         &:hover {
           background: $primary-color;
@@ -44,11 +52,14 @@
       .slick-prev {
         right: 50px;
         color: $heading-color;
+        @include screen-1200 {
+          right: 30px;
+        }
       }
 
       .slick-next {
         color: $primary-color;
-        right: 20px;
+        right: 10px;
       }
     }
     .single-sidebar {
@@ -68,6 +79,9 @@
           display: flex;
           align-items: center;
           border-bottom: 1px solid $border-color;
+          @include screen-1200 {
+            display: block;
+          }
           @include mobile-device {
             justify-content: space-around;
           }
@@ -78,6 +92,10 @@
           .img-box {
             width: 100px;
             margin-right: 10px;
+            @include screen-1200 {
+              margin-bottom: 20px;
+              margin-right: 0;
+            }
           }
           .cont-box {
             .title {
@@ -175,6 +193,14 @@
           }
         }
       }
+
+      // brand-filter
+      &.brand-filter {
+        .single-brand {
+          width: 70px;
+          margin-bottom: 20px;
+        }
+      }
     }
   }
 
@@ -186,6 +212,9 @@
     }
     @include desktop {
       width: 69%;
+    }
+    @include screen-1200 {
+      width: 79%;
     }
     @include mobile-device {
       width: 100%;

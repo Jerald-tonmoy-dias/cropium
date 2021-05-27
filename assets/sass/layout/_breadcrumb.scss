@@ -51,4 +51,58 @@
         }
 
     }
+
+    // breadcrum area 2
+    &.breadcrumb-area-2 {
+        .product-counter-wrapper{
+            margin-top: 30px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+            @include small-device {
+                flex-wrap: wrap;
+            }
+
+            .single-product-counter{
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                @include tablet {
+                    flex-direction: column;
+                }
+                @include landscape-phone {
+                    flex-direction: column;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+                .icon-box {
+                    margin-right: 10px;
+                    span {
+                        color: $white-color;
+                        font-size: 30px;
+                    }
+                }
+                .cont-box {
+                    .title {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $white-color;
+                        margin-bottom: 10px;
+                        text-transform: capitalize;
+                    }
+
+                    h6 {
+                        text-transform: capitalize;
+                        color: $white-color;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+            
+        
+    }
 }
