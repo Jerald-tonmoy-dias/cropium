@@ -477,6 +477,9 @@
 .brown-bg {
     background: $brown-bg;
 }
+.orange-bg {
+    background: $orange-bg;
+}
 
 .gray-bg {
     background: $gray-bg;
@@ -488,7 +491,6 @@
 .red-bg {
     background: $secondary-color;
 }
-
 .black-bg {
     background: $black-color;
 }
@@ -537,7 +539,6 @@
     color: $secondary-color;
 }
 
-
 .lite-blue {
     color: $blue-bg;
 }
@@ -575,7 +576,7 @@
     font-size: 18px;
     outline: none;
     border: none;
-    transition: .5s;
+    transition: 0.5s;
     position: fixed;
     right: 0px;
     bottom: 0px;
@@ -609,13 +610,11 @@
                     color: $white-color;
                     background-color: $secondary-color;
                 }
-
             }
 
             a.active {
                 color: $white-color;
                 background-color: $secondary-color;
-
             }
 
             &.pagination-arrow {
@@ -653,7 +652,6 @@
     100% {
         transform: rotate(320deg);
     }
-
 }
 
 .item-rotate2 {
@@ -673,7 +671,6 @@
     100% {
         transform: rotate(-320deg);
     }
-
 }
 
 .item-bounce {
@@ -686,15 +683,15 @@
 
 @keyframes bounce {
     0% {
-        transform: translateY(-5px)
+        transform: translateY(-5px);
     }
 
     50% {
-        transform: translateY(10px)
+        transform: translateY(10px);
     }
 
     100% {
-        transform: translateY(-5px)
+        transform: translateY(-5px);
     }
 }
 
@@ -708,15 +705,15 @@
 
 @keyframes zooming {
     0% {
-        transform: scale(.9)
+        transform: scale(0.9);
     }
 
     50% {
-        transform: scale(1)
+        transform: scale(1);
     }
 
     100% {
-        transform: scale(.9)
+        transform: scale(0.9);
     }
 }
 
@@ -730,11 +727,29 @@
 
 @keyframes ripple {
     0% {
-        box-shadow: 0 0 0 0 rgba(89, 86, 233, 0.2), 0 0 0 20px rgba(89, 86, 233, 0.2), 0 0 0 40px rgba(89, 86, 233, 0.2)
+        box-shadow: 0 0 0 0 rgba(89, 86, 233, 0.2), 0 0 0 20px rgba(89, 86, 233, 0.2);
     }
 
     100% {
-        box-shadow: 0 0 0 20px rgba(89, 86, 233, 0.2), 0 0 0 40px rgba(89, 86, 233, 0.1), 0 0 0 60px rgba(89, 86, 233, 0)
+        box-shadow: 0 0 0 20px rgba(89, 86, 233, 0.2), 0 0 0 40px rgba(89, 86, 233, 0.1);
+    }
+}
+
+.item-ripple2 {
+    -webkit-animation: ripple 3s infinite ease-in-out;
+    -o-animation: ripple 3s infinite ease-in-out;
+    -ms-animation: ripple 3s infinite ease-in-out;
+    -moz-animation: ripple 3s infinite ease-in-out;
+    animation: ripple 3s infinite ease-in-out;
+}
+
+@keyframes ripple2 {
+    0% {
+        box-shadow: 0 0 0 0 rgba(18, 16, 83, 0.2), 0 0 0 20px rgba(18, 16, 83, 0.2), 0 0 0 40px rgba(18, 16, 83, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(18, 16, 83, 0.2), 0 0 0 40px rgba(18, 16, 83, 0.1), 0 0 0 60px rgba(18, 16, 83, 0);
     }
 }
 

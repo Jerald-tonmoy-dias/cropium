@@ -53,7 +53,68 @@
             font-size: 20px;
             border-left: 1px solid $border-color;
             color: $white-color;
+        }
+    }
+}
 
+// home 1 newsletter
+.newsletter {
+    ::placeholder {
+        color: $white-color;
+        text-transform: capitalize;
+    }
+
+    .input-box {
+        padding: 10px 20px;
+        border: 1px solid $border-color;
+        color: $white-color;
+        border-radius: 30px;
+        background: transparent;
+        width: 360px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+
+        @include portrait-phone {
+            width: 100%;
+        }
+    }
+
+    .btn1 {
+        padding: 10px 30px;
+        border: 1px solid transparent;
+        border: none;
+    }
+}
+
+// shop single cart form
+.review-wrapper {
+    .inputBox {
+        width: 100%;
+        border: 1px solid $border-color;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+    .btn2 {
+        width: 100%;
+    }
+}
+
+// contact page form
+.contact-form {
+    .inputClass {
+        width: 100%;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+    }
+
+    button {
+        width: 40%;
+
+        @include mobile-device {
+            width: 100%;
         }
     }
 }

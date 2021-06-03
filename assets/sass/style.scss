@@ -28,32 +28,36 @@ TABLE OF CONTENTS:
 >> Shop List
 >> Shop Page
 >> Shop Page 2
+>> Shop Single
+>> Blog Page
 --------------------------------------------------------------*/
 
 // Setting
-@import 'settings/variable';
-@import 'settings/mixin';
+@import "settings/variable";
+@import "settings/mixin";
 
 // Base
-@import 'base/base';
+@import "base/base";
 
 // Layout
-@import 'layout/navbar';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/breadcrumb';
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/breadcrumb";
 
 // Module
-@import 'module/preloader';
-@import 'module/button';
-@import 'module/form';
+@import "module/preloader";
+@import "module/button";
+@import "module/form";
 
-// Theme 
-@import 'theme/theme';
-@import 'theme/homepage1';
-@import 'theme/cart';
-@import 'theme/checkout';
-@import 'theme/contact';
-@import 'theme/shop-list';
-@import 'theme/shop-page';
-@import 'theme/shop-page-2';
+// Theme
+@import "theme/theme";
+@import "theme/homepage1";
+@import "theme/cart";
+@import "theme/checkout";
+@import "theme/contact";
+@import "theme/shop-list";
+@import "theme/shop-page";
+@import "theme/shop-page-2";
+@import "theme/shop-single";
+@import "theme/blog";

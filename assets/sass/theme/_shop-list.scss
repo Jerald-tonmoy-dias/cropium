@@ -72,51 +72,6 @@
           text-align: center;
         }
       }
-      // product list
-      &.product-list {
-        .single-product {
-          padding: 20px 0;
-          display: flex;
-          align-items: center;
-          border-bottom: 1px solid $border-color;
-          @include screen-1200 {
-            display: block;
-          }
-          @include mobile-device {
-            justify-content: space-around;
-          }
-          &:last-child {
-            border-bottom: 1px solid transparent;
-            padding-bottom: 0;
-          }
-          .img-box {
-            width: 100px;
-            margin-right: 10px;
-            @include screen-1200 {
-              margin-bottom: 20px;
-              margin-right: 0;
-            }
-          }
-          .cont-box {
-            .title {
-              color: $heading-color;
-              font-weight: 700;
-              text-transform: capitalize;
-              margin-bottom: 10px;
-              display: block;
-              transition: $transition;
-              &:hover {
-                color: $primary-color;
-              }
-            }
-            .price {
-              font-weight: 500;
-              color: $heading-color;
-              display: block;
-            }
-          }
-        }
-      }
 
       // filter-bar
       &.filter-bar {
@@ -407,6 +362,49 @@
         background-color: $white-color;
         box-shadow: 0px 0px 20px 0px rgba(65, 34, 142, 0.1);
       }
+    }
+  }
+}
+// best seller wrapper single product
+.single-product-list {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $border-color;
+  @include screen-1200 {
+    display: block;
+  }
+  @include mobile-device {
+    justify-content: space-around;
+  }
+  &:last-child {
+    border-bottom: 1px solid transparent;
+    padding-bottom: 0;
+  }
+  .img-box {
+    width: 100px;
+    margin-right: 10px;
+    @include screen-1200 {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+  .cont-box {
+    .title {
+      color: $heading-color;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+      display: block;
+      transition: $transition;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    .price {
+      font-weight: 500;
+      color: $heading-color;
+      display: block;
     }
   }
 }
