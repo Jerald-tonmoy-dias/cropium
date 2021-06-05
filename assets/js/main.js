@@ -309,12 +309,6 @@
             prevArrow: '<button class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
             responsive: [
                 {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 2,
-                    }
-                },
-                {
                     breakpoint: 576,
                     settings: {
                         slidesToShow: 1,
@@ -374,6 +368,20 @@
 
                 srcAction: 'iframe_src',
             }
+        });
+
+        // post slider active
+        $('.post-slider-active').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            dots: false,
+            arrows: true,
+            nextArrow: '<button class="slick-next"><i class="fas fa-arrow-right"></i></button>',
+            prevArrow: '<button class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
+            responsive: [{
+
+            }]
         });
 
         // mblog-slider

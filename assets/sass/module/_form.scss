@@ -118,3 +118,44 @@
         }
     }
 }
+
+// blog comment form
+.blog-comment-form {
+    ::placeholder {
+        color: $heading-color;
+        opacity: 0.5;
+    }
+
+    .input-wrapper {
+        position: relative;
+
+        .inputBox {
+            width: 100%;
+            padding: 10px 20px;
+            border: 1px solid $border-color;
+            border-radius: 5px;
+        }
+
+        .f-icon {
+            position: absolute;
+            top: 31%;
+            transform: translateY(-50%);
+            left: 22px;
+            color: $heading-color;
+            opacity: 0.5;
+
+            &.text-icon {
+                top: 21%;
+            }
+        }
+    }
+
+    .btn1 {
+        margin-bottom: 30px;
+        z-index: 1;
+
+        @include mobile-device {
+            width: 100%;
+        }
+    }
+}

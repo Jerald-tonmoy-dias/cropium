@@ -1218,7 +1218,7 @@
         }
     }
 
-    .cont-box {
+    .product-cont-box {
         h5 {
             margin-bottom: 20px;
 
@@ -1402,7 +1402,7 @@
 // categories single product
 .categories-single-product {
     display: block;
-    padding: 20px;
+    padding: 30px 20px;
     background: $gray-bg;
     margin-bottom: 20px;
     transition: $transition;
@@ -1410,7 +1410,7 @@
 
     .img-box {
         width: 100px;
-        height: 100px;
+        height: 130px;
         margin-bottom: 20px;
         margin-right: auto;
         margin-left: auto;
