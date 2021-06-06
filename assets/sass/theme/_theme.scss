@@ -838,3 +838,28 @@
         transform: translate(0, 0);
     }
 }
+
+// custom scrollbar style
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $primary-color;
+    height: 20px;
+    border-radius: 10px;
+}
+
+// for custom selector
+::-moz-selection {
+    /* Code for Firefox */
+    color: $white-color;
+    background: $secondary-color;
+}
+
+::selection {
+    color: $white-color;
+    background: $secondary-color;
+}

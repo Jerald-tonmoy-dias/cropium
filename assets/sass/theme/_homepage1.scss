@@ -302,14 +302,6 @@
             margin-bottom: 30px;
             position: relative;
             z-index: 11;
-
-            h4 {
-                margin-bottom: 20px;
-            }
-
-            p {
-                margin-bottom: 20px;
-            }
         }
 
         .img-box {
@@ -333,7 +325,6 @@
 
         .img-box {
             width: 140px;
-            margin-bottom: 10px;
             margin-right: auto;
             margin-left: auto;
         }
@@ -341,13 +332,8 @@
         .cont-box {
             text-align: center;
 
-            h4 {
-                margin-bottom: 20px;
-            }
-
             h6 {
                 font-weight: 400;
-                margin-bottom: 10px;
                 color: $heading-color;
             }
 
@@ -540,6 +526,8 @@
     .banner-img {
         width: 150px;
         margin-bottom: 10px;
+        z-index: 1;
+        position: relative;
 
         @include mobile-device {
             margin-right: auto;
@@ -1207,11 +1195,11 @@
     }
 
     .img-box {
-        margin-bottom: 20px;
         width: 150px;
         height: 150px;
         margin-right: auto;
         margin-left: auto;
+        overflow: hidden;
 
         img {
             width: 90%;
@@ -1220,8 +1208,6 @@
 
     .product-cont-box {
         h5 {
-            margin-bottom: 20px;
-
             a {
                 color: $heading-color;
 
@@ -1233,7 +1219,6 @@
 
         .price {
             display: flex;
-            margin-bottom: 20px;
 
             span {
                 font-size: 16px;
@@ -1342,7 +1327,7 @@
 
         .price {
             display: flex;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
             display: block;
 
             span {
@@ -1366,12 +1351,12 @@
     .icons-link-wrapper {
         display: flex;
         position: absolute;
-        bottom: 10px;
-        left: 50%;
+        bottom: 20px;
+        left: 52.5%;
         transform: translateX(-50%);
         right: 20px;
-        opacity: 0;
-        visibility: hidden;
+        // opacity: 0;
+        // visibility: hidden;
         transition: $transition;
 
         a {
@@ -1410,9 +1395,10 @@
 
     .img-box {
         width: 100px;
-        height: 130px;
+        height: 100px;
         margin-bottom: 20px;
         margin-right: auto;
+        overflow: hidden;
         margin-left: auto;
     }
 
@@ -1433,7 +1419,6 @@
 }
 
 // single blog area
-
 .single-blog {
     .img-box {
         margin-bottom: 30px;

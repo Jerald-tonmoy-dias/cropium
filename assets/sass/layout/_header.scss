@@ -1,7 +1,5 @@
 /* Header Section */
 .header-area {
-
-
     // header-top
     .header-top {
         padding-top: 20px;
@@ -17,7 +15,6 @@
                 display: flex;
 
                 li {
-
                     &:last-child {
                         margin-right: initial;
                     }
@@ -41,8 +38,6 @@
                     }
                 }
             }
-
-
         }
 
         .header-logo {
@@ -146,7 +141,7 @@
                 text-transform: capitalize;
             }
 
-            // cat wrapper 
+            // cat wrapper
             .cat-wrapper {
                 background: $white-color;
                 width: 100%;
@@ -159,14 +154,15 @@
                 z-index: 10;
                 display: none;
 
-
                 @include mobile-device {
                     display: none;
-                    width: 96%;
                 }
 
                 @include desktop {
                     display: none;
+                }
+                @include portrait-phone {
+                    width: 97%;
                 }
 
                 &.active_one {
@@ -176,11 +172,13 @@
 
                     @include mobile-device {
                         display: none;
-                        width: 96%;
                     }
 
                     @include desktop {
                         display: none;
+                    }
+                    @include portrait-phone {
+                        width: 97%;
                     }
                 }
 
@@ -211,14 +209,14 @@
                             padding: 10px;
 
                             &::after {
-                                content: '\f078';
-                                font-family: 'Font Awesome 5 Free';
+                                content: "\f078";
+                                font-family: "Font Awesome 5 Free";
                                 font-weight: 900;
                                 color: $heading-color;
                                 font-size: 10px;
                                 margin-left: 5px;
                                 transition: $transition;
-                                opacity: .5;
+                                opacity: 0.5;
                                 position: absolute;
                                 top: 10px;
                                 right: 0;
@@ -250,22 +248,20 @@
                             .sublist {
                                 opacity: 1;
                                 visibility: visible;
-
                             }
-
                         }
 
-                        // mega lsit
+                        // mega list
                         .mega-wrapper {
                             position: absolute;
                             top: 0;
                             left: 105%;
+
                             opacity: 0;
                             visibility: hidden;
                             transition: $transition;
                             overflow: hidden;
                             background: $white-color;
-                            padding: 20px 40px;
 
                             @include mobile-device {
                                 left: 0;
@@ -275,7 +271,6 @@
                                 overflow-y: scroll;
                                 z-index: 22;
                             }
-
                         }
 
                         .mega-menu {
@@ -286,19 +281,19 @@
 
                             @include mobile-device {
                                 width: 100%;
-
                             }
 
                             .vec1 {
                                 position: absolute;
-                                top: 0;
-                                right: 0;
+
+                                top: -86px;
+                                right: -125px;
+
                                 width: initial;
 
                                 @include mobile-device {
                                     display: none;
                                 }
-
                             }
 
                             .brands {
@@ -308,9 +303,11 @@
                                 justify-content: space-between;
                                 background: $gray-bg;
                                 z-index: 1;
+                                padding: 30px;
 
                                 @include mobile-device {
                                     flex-wrap: wrap;
+                                    display: none;
                                 }
 
                                 .menu-brand {
@@ -321,7 +318,9 @@
                             .mega-item {
                                 width: 33.33%;
                                 margin-right: 0;
-                                margin-bottom: 40px;
+                                margin-bottom: 10px;
+                                padding: 20px 40px;
+                                border-bottom: 1px solid transparent;
 
                                 @include mobile-device {
                                     width: 100%;
@@ -332,10 +331,7 @@
                                         display: block;
                                         margin-right: initial;
                                         border: none;
-
-                                        @include mobile-device {
-                                            line-height: 1.7;
-                                        }
+                                        line-height: 2.7;
 
                                         &.mega-img {
                                             width: 100px;
@@ -364,10 +360,8 @@
                                         }
                                     }
                                 }
-
                             }
                         }
-
 
                         // single sublist
                         .sublist {
@@ -421,11 +415,9 @@
                                     &:hover {
                                         color: $primary-color;
                                     }
-
                                 }
                             }
                         }
-
                     }
                 }
             }
