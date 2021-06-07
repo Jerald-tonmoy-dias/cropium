@@ -39,12 +39,12 @@
         });
 
         // Countdown 
-        // $('.countdown').downCount({
-        //     date: '06/28/2021 12:00:00',
-        //     offset: +6
-        // }, function () {
-        //     alert('Countdown done!');
-        // });
+        $('.countdown').downCount({
+            date: '06/28/2025 12:00:00',
+            offset: +6
+        }, function () {
+            alert('Countdown done!');
+        });
 
         // full width search bar
         const _close = document.querySelector('.close_');
@@ -71,6 +71,7 @@
             dots: true,
             infinite: true,
             arrows: false,
+            autoplay: true,
             speed: 300,
             fade: true,
             slidesToShow: 1,
@@ -125,6 +126,11 @@
                     }
                 }
             ]
+        });
+
+        // popular-product-slider refresh
+        $("#all-tab, #sale-tab, #rated-tab, #discount-tab").click(function () {
+            $('.popular-product-slider').slick('refresh');
         });
 
         // popular-product-slider-2
@@ -239,7 +245,7 @@
             dots: false,
             infinite: true,
             arrows: true,
-            speed: 1000,
+            speed: 300,
             fade: true,
             autoplay: true,
             slidesToShow: 1,

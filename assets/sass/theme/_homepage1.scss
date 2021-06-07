@@ -33,6 +33,14 @@
             }
         }
     }
+    .slick-active {
+        .animate-title {
+            animation: 1.5s 0.3s fadeInUp;
+        }
+        .animate-down {
+            animation: 1.5s 0.3s fadeInDown;
+        }
+    }
 }
 
 .hero-area {
@@ -824,6 +832,15 @@
     }
 
     .product-landing-slider {
+        .slick-active {
+            .animate-left {
+                animation: 1.5s 0.3s fadeInLeft;
+            }
+            .animate-right {
+                animation: 1.5s 0.3s fadeInRight;
+            }
+        }
+
         // slick prev slick next
         .slick-next,
         .slick-prev {
@@ -1101,7 +1118,7 @@
 
                 a {
                     &:hover {
-                        color: $primary-color;
+                        color: $secondary-color;
                     }
                 }
             }
@@ -1146,8 +1163,8 @@
             .vec-img {
                 width: initial;
                 position: absolute;
-                top: 10px;
-                left: 0;
+                top: 56px;
+                left: -65px;
             }
 
             .newsletter {
@@ -1355,8 +1372,6 @@
         left: 52.5%;
         transform: translateX(-50%);
         right: 20px;
-        // opacity: 0;
-        // visibility: hidden;
         transition: $transition;
 
         a {

@@ -256,7 +256,6 @@
                             position: absolute;
                             top: 0;
                             left: 105%;
-
                             opacity: 0;
                             visibility: hidden;
                             transition: $transition;
@@ -271,6 +270,17 @@
                                 overflow-y: scroll;
                                 z-index: 22;
                             }
+
+                            .vec1 {
+                                position: absolute;
+                                top: -86px;
+                                right: -130px;
+                                width: initial;
+
+                                @include mobile-device {
+                                    display: none;
+                                }
+                            }
                         }
 
                         .mega-menu {
@@ -282,39 +292,6 @@
                             @include mobile-device {
                                 width: 100%;
                             }
-
-                            .vec1 {
-                                position: absolute;
-
-                                top: -86px;
-                                right: -125px;
-
-                                width: initial;
-
-                                @include mobile-device {
-                                    display: none;
-                                }
-                            }
-
-                            .brands {
-                                width: 100%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-                                background: $gray-bg;
-                                z-index: 1;
-                                padding: 30px;
-
-                                @include mobile-device {
-                                    flex-wrap: wrap;
-                                    display: none;
-                                }
-
-                                .menu-brand {
-                                    width: initial;
-                                }
-                            }
-
                             .mega-item {
                                 width: 33.33%;
                                 margin-right: 0;
@@ -360,6 +337,24 @@
                                         }
                                     }
                                 }
+                            }
+                        }
+                        .brands {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            background: $gray-bg;
+                            z-index: 1;
+                            padding: 30px;
+
+                            @include mobile-device {
+                                flex-wrap: wrap;
+                                display: none;
+                            }
+
+                            .menu-brand {
+                                width: initial;
                             }
                         }
 
