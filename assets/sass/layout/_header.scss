@@ -243,6 +243,8 @@
                             .mega-wrapper {
                                 opacity: 1;
                                 visibility: visible;
+                                @include mobile-device {
+                                }
                             }
 
                             .sublist {

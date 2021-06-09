@@ -516,7 +516,6 @@
     }
 
     h4 {
-        margin-bottom: 20px;
         color: $white-color;
     }
 
@@ -533,7 +532,6 @@
 
     .banner-img {
         width: 150px;
-        margin-bottom: 10px;
         z-index: 1;
         position: relative;
 
@@ -1106,13 +1104,7 @@
                     text-transform: capitalize;
                 }
 
-                h3 {
-                    font-size: 30px;
-                    margin-bottom: 20px;
-                }
-
                 h5 {
-                    margin-bottom: 30px;
                     font-weight: 400;
                 }
 
@@ -1152,7 +1144,7 @@
         .subs-right {
             background: $secondary-color;
             position: relative;
-            padding: 80px 40px;
+            padding: 70px 40px;
             width: 50%;
             overflow: hidden;
 
@@ -1172,10 +1164,7 @@
                 z-index: 1;
 
                 h3 {
-                    font-size: 30px;
-                    margin-bottom: 30px;
                     color: $white-color;
-                    font-weight: 900;
                 }
             }
         }
@@ -1453,10 +1442,6 @@
                 color: $white-color;
             }
 
-            h5 {
-                margin-bottom: 7px;
-            }
-
             h6 {
                 font-weight: 400;
             }
@@ -1464,11 +1449,7 @@
     }
 
     .cont-box {
-        margin-bottom: 30px;
-
         h4 {
-            margin-bottom: 10px;
-
             a {
                 color: $heading-color;
 

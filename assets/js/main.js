@@ -315,6 +315,12 @@
             prevArrow: '<button class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
             responsive: [
                 {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
                     breakpoint: 576,
                     settings: {
                         slidesToShow: 1,

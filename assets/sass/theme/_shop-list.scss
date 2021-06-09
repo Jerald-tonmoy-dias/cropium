@@ -29,7 +29,7 @@
         height: 30px;
         line-height: 30px;
         border-radius: 50%;
-        top: 45px;
+        top: 25px;
         transition: $transition;
         display: block;
         z-index: 1;
@@ -64,10 +64,8 @@
     }
     .single-sidebar {
       background: $gray-bg;
-      padding: 50px 15px;
-      margin-bottom: 30px;
+      padding: 30px 15px;
       h5 {
-        margin-bottom: 20px;
         @include mobile-device {
           text-align: center;
         }
@@ -115,6 +113,7 @@
             background: $secondary-color;
             border: none;
             outline: none;
+            text-transform: capitalize;
             color: $white-color;
           }
         }
@@ -126,7 +125,7 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-bottom: 20px;
+          line-height: 2;
           &:last-child {
             margin-bottom: initial;
           }
@@ -153,7 +152,7 @@
       &.brand-filter {
         .single-brand {
           width: 70px;
-          margin-bottom: 20px;
+          margin: 20px auto;
         }
       }
     }
@@ -221,153 +220,11 @@
         }
       }
     }
-
-    // single product
-    .single-product {
-      padding: 70px 30px;
-      background: $gray-bg;
-      position: relative;
-      transition: $transition;
-      margin-bottom: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      .upper-content {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 40px;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        .batch {
-          font-weight: 500;
-          font-size: 14px;
-          padding: 4px 10px;
-          text-transform: capitalize;
-        }
-
-        .dots-wrapper {
-          display: flex;
-
-          span {
-            font-size: 12px;
-          }
-        }
-      }
-
-      .img-box {
-        width: 25%;
-        margin-bottom: 20px;
-        @include small-device {
-          width: 100%;
-        }
-        img {
-          width: 140px;
-          margin-right: auto;
-          margin-left: auto;
-          @include small-device {
-            width: 90px;
-            margin-right: initial;
-            margin-left: initial;
-          }
-        }
-      }
-
-      .cont-box {
-        width: 75%;
-        @include small-device {
-          width: 100%;
-        }
-        h5 {
-          margin-bottom: 15px;
-          font-weight: 700;
-
-          a {
-            color: $heading-color;
-
-            &:hover {
-              color: $primary-color;
-            }
-          }
-        }
-        p {
-          margin-bottom: 20px;
-        }
-        .dots-wrapper {
-          margin-bottom: 15px;
-        }
-
-        .price {
-          display: flex;
-          margin-bottom: 15px;
-
-          span {
-            font-size: 16px;
-            font-weight: 700;
-
-            del {
-              font-weight: 400;
-              font-size: 14px;
-            }
-          }
-
-          .disc {
-            font-weight: 500;
-            font-size: 14px;
-            margin-left: 10px;
-          }
-        }
-      }
-
-      .icons-link-wrapper {
-        display: flex;
-
-        a {
-          margin-right: 10px;
-          &:last-child {
-            margin-right: 0;
-          }
-
-          span {
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            border-radius: 5px;
-            text-align: center;
-            display: block;
-
-            &.heart {
-              color: $primary-color;
-              background: $teal-bg;
-            }
-
-            &.reload {
-              color: $orange-bg;
-              background: $mid-choc;
-            }
-
-            &.preview {
-              color: $secondary-color;
-              background: $lite-choc;
-            }
-
-            &.shop {
-              color: $blue-bg;
-              background: $lite-green;
-            }
-          }
-        }
-      }
-
-      &:hover {
-        background-color: $white-color;
-        box-shadow: 0px 0px 20px 0px rgba(65, 34, 142, 0.1);
-      }
-    }
   }
 }
 // best seller wrapper single product
 .single-product-list {
-  padding: 20px 0;
+  padding: 30px 0;
   display: flex;
   align-items: center;
   border-bottom: 1px solid $border-color;
@@ -406,5 +263,134 @@
       color: $heading-color;
       display: block;
     }
+  }
+}
+
+// single product-2
+.single-product-2 {
+  padding: 70px 30px;
+  background: $gray-bg;
+  position: relative;
+  transition: $transition;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  .upper-content {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    .batch {
+      font-weight: 500;
+      font-size: 14px;
+      padding: 4px 10px;
+      text-transform: capitalize;
+    }
+  }
+
+  .img-box {
+    width: 25%;
+    margin-bottom: 20px;
+    @include small-device {
+      width: 100%;
+    }
+    img {
+      width: 140px;
+      margin-right: auto;
+      margin-left: auto;
+      @include small-device {
+        width: 90px;
+        margin-right: initial;
+        margin-left: initial;
+      }
+    }
+  }
+
+  .cont-box {
+    width: 75%;
+    @include small-device {
+      width: 100%;
+    }
+    h5 {
+      a {
+        color: $heading-color;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+    .dots-wrapper {
+      display: flex;
+      margin-top: 10px;
+      span {
+        font-size: 12px;
+      }
+    }
+
+    .price {
+      display: flex;
+      margin-top: 10px;
+
+      span {
+        font-size: 16px;
+        font-weight: 700;
+
+        del {
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+
+      .disc {
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .icons-link-wrapper {
+    display: flex;
+    margin-top: 10px;
+    a {
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+        text-align: center;
+        display: block;
+
+        &.heart {
+          color: $primary-color;
+          background: $teal-bg;
+        }
+
+        &.reload {
+          color: $orange-bg;
+          background: $mid-choc;
+        }
+
+        &.preview {
+          color: $secondary-color;
+          background: $lite-choc;
+        }
+
+        &.shop {
+          color: $blue-bg;
+          background: $lite-green;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $white-color;
+    box-shadow: 0px 0px 20px 0px rgba(65, 34, 142, 0.1);
   }
 }

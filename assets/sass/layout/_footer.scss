@@ -9,28 +9,16 @@
                 margin-bottom: 20px;
             }
 
-            p {
-                margin-bottom: 20px;
-            }
-
             .payment {
-                display: flex;
-                align-items: center;
-
                 .pimg {
                     width: initial;
                     margin-left: 10px;
-                    margin-top: -18px;
                 }
-            }
-
-            h4 {
-                margin-bottom: 20px;
             }
 
             ul {
                 li {
-                    line-height: 1.7;
+                    line-height: 2.4;
 
                     a {
                         color: $heading-color;
